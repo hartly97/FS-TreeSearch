@@ -35,7 +35,7 @@ var fs = new FamilySearch({
   tokenCookie: 'FS_AUTH_TOKEN'
 });
 
-if (fs.getAccessToken() == undefined) fs.oauthResponse();
+fs.oauthResponse();
 
 $('.login').click(function() {
 	fs.oauthRedirect();
